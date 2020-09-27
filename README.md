@@ -10,3 +10,5 @@ Notable profiles.
 2. [HackerRank](https://www.hackerrank.com/dt_kanha)
 3. [HackerEarth](https://www.hackerearth.com/@dattatreya3)
 4. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
+
+<a href="{{ site.data.social-media.email.href }}{{ site.data.social-media.email.id }}" title="Email me">Click here to send me an email!</a>
