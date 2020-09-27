@@ -1,7 +1,6 @@
 theme: jekyll-theme-cayman
 title: Dattatreya Tripathy
 description: A peep into works of an aspiring software engineer
-minima:
-  social_links:
-    twitter: CuriousDT
-    github: dt97
+social_links:
+  twitter: CuriousDT
+  github: dt97
