@@ -2,7 +2,7 @@
 
 ### About
 
-I am an undergraduate in Computer Science and Engineering graduated from National Institute of Technology, Rourkela in 2019. My interests include Competitive Programming, Software Development, and Machine Learning. I like playing badminton, solving logic puzzles, and listening music in my liesure time. I write and improve articles related to Computer Science at [GeeksforGeeks](https://www.geeksforgeeks.org/), some of which can be found [here](https://auth.geeksforgeeks.org/user/dt_kanha/articles). 
+I am an undergraduate in Computer Science and Engineering graduated from National Institute of Technology, Rourkela in 2019. My interests include Competitive Programming, Software Development, and Machine Learning. I like playing badminton, solving logic puzzles, and listening music in my leisure time. I write and improve articles related to Computer Science at [GeeksforGeeks](https://www.geeksforgeeks.org/), some of which can be found [here](https://auth.geeksforgeeks.org/user/dt_kanha/articles). 
 
 Notable profiles.
 
