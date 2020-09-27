@@ -11,5 +11,5 @@ Notable profiles.
 3. [HackerEarth](https://www.hackerearth.com/@dattatreya3)
 4. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
 
-<link rel="stylesheet" href="https://github.com/dt97/dt97.github.io/tree/master/css/social-circles.min.css">
+<link rel="stylesheet" href="https://github.com/dt97/dt97.github.io/tree/master/css/social-circles.css">
 <a class="icon-twitter social-button grey" href="http://twitter.com/CuriousDT"></a>
