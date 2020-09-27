@@ -12,6 +12,5 @@ Notable profiles.
 4. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
 
 <footer>
-  <span><a href="mailto:dt.kanha@gmail.com">Gmail</a> <a href="http://github.com/dt97">GitHub</a> <a href="https://www.linkedin.com/in/dattatreya-tripathy-51b809115/">LinkedIn</a></span>
+  <span><a href="mailto:dt.kanha@gmail.com">Gmail</a> | <a href="http://github.com/dt97">GitHub</a> | <a href="https://www.linkedin.com/in/dattatreya-tripathy-51b809115/">LinkedIn</a></span>
 </footer>
-  
