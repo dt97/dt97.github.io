@@ -1,3 +1,7 @@
 theme: jekyll-theme-cayman
 title: Dattatreya Tripathy
 description: A peep into works of an aspiring software engineer
+[[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://www.linkedin.com/in/dattatreya-tripathy-51b809115/"
