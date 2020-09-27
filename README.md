@@ -12,5 +12,4 @@ Notable profiles.
 4. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
 
 <link rel="stylesheet" href="https://github.com/dt97/dt97.github.io/tree/master/css/social-circles.min.css">
-<a class="icon-twitter social-button color" href="http://twitter.com/CuriousDT"></a>
-<a class="icon-github social-button color" href="http://github.com/dt97"></a>
+<a class="icon-twitter social-button grey" href="http://twitter.com/CuriousDT"></a>
