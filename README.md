@@ -11,5 +11,7 @@ Notable profiles.
 3. [HackerEarth](https://www.hackerearth.com/@dattatreya3)
 4. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
 
-<link rel="stylesheet" href="https://github.com/dt97/dt97.github.io/tree/master/css/social-circles.css">
-<a class="icon-twitter social-button blue" href="http://twitter.com/CuriousDT"></a>
+<footer>
+  <span><a href="mailto:dt.kanha@gmail.com">Gmail</a> <a href="http://github.com/dt97">GitHub</a> <a href="https://www.linkedin.com/in/dattatreya-tripathy-51b809115/">LinkedIn</a></span>
+</footer>
+  
