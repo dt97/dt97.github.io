@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 <img src="GitHubProfile.jpg" width="300" height="400" />
 
 ### About
