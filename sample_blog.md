@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: "Sample Blog"
-permalink: /post/
+permalink: /posts/
 ---
 
 ### Under constuction
