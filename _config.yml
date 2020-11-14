@@ -1,26 +1,12 @@
 # Site settings
-title:          "Dattatreya Tripathy"
-description:    "Associate Software Engineer at ServiceNow"
+theme:          jekyll-theme-cayman
+title:          Dattatreya Tripathy
+description:    Associate Software Engineer at ServiceNow
 baseurl:        ""
 url:            "https://dt97.github.io"
 
-# Author
+# Author settings
 author:
   name:         Dattatreya Tripathy
   url:          https://dt97.github.io
   email:        dt.kanha@gmail.com
-
-# Build settings
-markdown:       kramdown
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
-plugins:
-  - jekyll-paginate
-
-# Permalinks
-permalink:      /:year-:month-:day/:title
