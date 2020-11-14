@@ -1,3 +1,7 @@
+---
 layout: page
 title: "Sample Blog"
-permalink: /https://dt97.github.io/posts/
+permalink: /post/
+---
+
+### Under constuction
