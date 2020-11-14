@@ -1,5 +1,6 @@
 ---
 layout: home
+permalink: /
 ---
 
 <img src="GitHubProfile.jpg" width="300" height="400" />
