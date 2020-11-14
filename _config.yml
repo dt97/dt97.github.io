@@ -1,5 +1,5 @@
 # Site settings
-theme:          jekyll-theme-cayman
+theme:          jekyll-theme-slate
 title:          Dattatreya Tripathy
 description:    Associate Software Engineer at ServiceNow
 baseurl:        ""
