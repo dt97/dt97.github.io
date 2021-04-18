@@ -6,10 +6,9 @@ I am an undergraduate in Computer Science and Engineering graduated from Nationa
 
 Notable profiles.
 
-1. [CodeChef](https://www.codechef.com/users/dt_1997)
-2. [HackerRank](https://www.hackerrank.com/dt_kanha)
-3. [HackerEarth](https://www.hackerearth.com/@dattatreya3)
-4. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
+1. [HackerRank](https://www.hackerrank.com/dt_kanha)
+2. [HackerEarth](https://www.hackerearth.com/@dattatreya3)
+3. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
 
 <footer>
   <span><a href="mailto:dt.kanha@gmail.com">Gmail</a> | <a href="http://github.com/dt97">GitHub</a> | <a href="https://www.linkedin.com/in/dattatreya-tripathy-51b809115/">LinkedIn</a></span>
