@@ -6,7 +6,8 @@ I am an undergraduate in Computer Science and Engineering graduated from Nationa
 
 Notable profiles.
 
-1. [HackerRank](https://www.hackerrank.com/dt_kanha)
+1. [Codeforces](https://codeforces.com/profile/dt_kanha)
+2. [HackerRank](https://www.hackerrank.com/dt_kanha)
 2. [HackerEarth](https://www.hackerearth.com/@dattatreya3)
 3. [GeeksforGeeks](https://auth.geeksforgeeks.org/user/dt_kanha/profile)
 
