@@ -1,0 +1,360 @@
+---
+layout: default
+title: Projects
+description: My Projects Portfolio
+---
+
+<style>
+  .projects-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #1e6bb8;
+    text-decoration: none;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .project-card {
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-header {
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+  }
+
+  .project-header:hover {
+    background: #f0f3f6;
+  }
+
+  .project-card.expanded .project-header {
+    border-bottom: 1px solid #e1e4e8;
+  }
+
+  .project-title {
+    margin: 0;
+    font-size: 1.2em;
+    color: #24292e;
+    font-weight: 600;
+  }
+
+  .expand-icon {
+    font-size: 1.2em;
+    color: #586069;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card.expanded .expand-icon {
+    transform: rotate(180deg);
+  }
+
+  .project-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .project-card.expanded .project-content {
+    display: block;
+  }
+
+  .project-summary {
+    color: #444d56;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .project-tags {
+    margin-bottom: 16px;
+  }
+
+  .tag {
+    display: inline-block;
+    background: #e1e4e8;
+    color: #24292e;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+
+  .project-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+
+  .btn-project {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-github {
+    background: #24292e;
+    color: #fff;
+  }
+
+  .btn-github:hover {
+    background: #1b1f23;
+    color: #fff;
+  }
+
+  .btn-video {
+    background: #1e6bb8;
+    color: #fff;
+  }
+
+  .btn-video:hover {
+    background: #155a9c;
+    color: #fff;
+  }
+
+  .video-container {
+    margin-top: 16px;
+    display: none;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .video-container.visible {
+    display: block;
+  }
+
+  .video-container video {
+    width: 100%;
+    max-height: 500px;
+  }
+
+  .video-placeholder {
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    background: #24292e;
+  }
+
+  .no-video {
+    color: #6a737d;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  /* Modal styles */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-overlay.visible {
+    display: flex;
+  }
+
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .modal-content video {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 8px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  .modal-close:hover {
+    color: #ccc;
+  }
+
+  @media (max-width: 600px) {
+    .project-actions {
+      flex-direction: column;
+    }
+    
+    .btn-project {
+      justify-content: center;
+    }
+  }
+</style>
+
+<div class="projects-container">
+  <a href="./" class="back-link">← Back to Home</a>
+  
+  <h2>My Projects</h2>
+  <p>Click on a project to view details, demo video, and source code.</p>
+
+  <!-- Project 1: Doctor Appointment Booking Agent -->
+  <div class="project-card" data-project="doctor-appointment">
+    <div class="project-header" onclick="toggleProject(this)">
+      <h3 class="project-title">Doctor Appointment Booking Agent</h3>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="project-content">
+      <p class="project-summary">
+        An AI agent created using LangChain that automates the process of identifying 
+        doctors based on medical complaints and booking the appointment. 
+        The agent uses LLM to understand user requests, suggests doctors, 
+        checks their availability, and handles the complete booking workflow.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">AI/ML</span>
+        <span class="tag">NLP</span>
+        <span class="tag">Agentic AI</span>
+      </div>
+      <div class="project-actions">
+        <a href="https://github.com/dt97/doctor-appointment-agent/tree/main" target="_blank" class="btn-project btn-github">
+          <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          View on GitHub
+        </a>
+        <button class="btn-project btn-video" onclick="toggleVideo('doctor-appointment')">
+          <svg height="18" width="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          Watch Demo
+        </button>
+      </div>
+      <div class="video-container" id="video-doctor-appointment">
+        <video controls>
+          <!-- Multiple source tags for multiple browser support, ones which support .mov natively
+                like Safari, and ones with support .mp4 like Chrome, Firefox
+          -->
+          <source src="./videos/doctor_appointment_agent_ent_example.mov" type="video/quicktime">
+          <source src="./videos/doctor_appointment_agent_ent_example.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2: Timetable Scheduling Algorithm -->
+  <div class="project-card" data-project="timetable-algo">
+    <div class="project-header" onclick="toggleProject(this)">
+      <h3 class="project-title">Timetable Scheduling Algorithm</h3>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="project-content">
+      <p class="project-summary">
+        An efficient algorithm for generating timetable of NIT Rourkela students for a given semester. 
+        This project implements scheduling logic that handles multiple constraints such as 
+        subject sequence, TP (theory followed by practical) vs. PT (practical followed by theory), 
+        duration of practials vs. theory courses, free periods (ones without class), subject time slot etc. 
+      </p>
+      <div class="project-tags">
+        <span class="tag">C++</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">Arrays</span>
+        <span class="tag">Scheduling</span>
+      </div>
+      <div class="project-actions">
+        <a href="https://bitbucket.org/dt_kanha/algorithms/src/master/" target="_blank" class="btn-project btn-github">
+          <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          View Source Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Video Modal -->
+<div class="modal-overlay" id="videoModal" onclick="closeModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <video id="modalVideo" controls>
+      <source src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+  function toggleProject(header) {
+    const card = header.closest('.project-card');
+    card.classList.toggle('expanded');
+  }
+
+  function toggleVideo(projectId) {
+    const videoContainer = document.getElementById('video-' + projectId);
+    videoContainer.classList.toggle('visible');
+  }
+
+  function openVideoModal(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    video.src = videoSrc;
+    modal.classList.add('visible');
+    video.play();
+  }
+
+  function closeModal(event) {
+    if (event && event.target !== event.currentTarget) return;
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    video.pause();
+    video.src = '';
+    modal.classList.remove('visible');
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+</script>
